@@ -6,7 +6,7 @@ const eraser = document.querySelector("#eraser");
 const clear = document.querySelector('#clear');
 
 window.onload=function() {
-    fullGrid(64);
+    fullGrid(128);
 };
 
 

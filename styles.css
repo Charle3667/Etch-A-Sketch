@@ -26,7 +26,10 @@ body {
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-
+    border-top: 3px salmon solid;
+    border-left: 3px salmon solid;
+    border-right: brown 3px solid;
+    border-bottom: brown 3px solid;
 }
 
 #container {
@@ -34,7 +37,10 @@ body {
     flex-wrap: wrap;
     height: 320px;
     width: 320px;
-    border: black solid 1px;
+    border-top: 3px brown solid;
+    border-left: 3px brown solid;
+    border-right: salmon 3px solid;
+    border-bottom: salmon 3px solid;
     background-color: white;
 }
 
@@ -52,9 +58,12 @@ body {
 
 #toolBar {
     display: flex;
+    padding-top: auto;
+    padding-bottom: auto;
     justify-content: space-between;
     height: 100px;
-    margin-top: 10px;
+    margin-top: 20px;
+    
 }
 
 #nob {
@@ -62,11 +71,28 @@ body {
     width: 50px;
     border-radius: 100%;
     background-color: grey;
+    border-top: white solid 1px;
+    border-left: white solid 1px;
+}
+
+/* #buttons {
+    margin-top: auto;
+    margin-bottom: auto;
+} */
+
+button {
+    background-color: slategray;
+    color: white;
+    border-radius: 10px;
+    border-width: 1px;
+    width: 60px;
 }
 
 #grids {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 
@@ -74,6 +100,18 @@ body {
 #colors {
     display: flex;
     justify-content: space-around;
+}
+
+#black {
+    color: black;
+}
+
+#red {
+    color: red;
+}
+
+#blue {
+    color: blue;
 }
 
 #cleanUp {
