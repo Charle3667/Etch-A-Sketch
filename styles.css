@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFE9F3;
+}
+
+#header {
+    background-color: #87BAAB;
+    color: #2B3A67;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 10px;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+}
+
+#object {
+    padding: 20px;
+    align-content: center;
+    background-color: #BF1A2F;
+    width: 320px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 320px;
+    width: 320px;
+    border: black solid 1px;
+    background-color: white;
+}
+
+#row { 
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#column {
+    display: flex;
+    flex: 1;
+
+}
+
+#toolBar {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#nob {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: grey;
+}
+
+#grids {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+#colors {
+    display: flex;
+    justify-content: space-around;
+}
+
+#cleanUp {
+    display: flex;
+    justify-content: space-around;
+}
