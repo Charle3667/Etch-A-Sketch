@@ -1,4 +1,6 @@
 const container = document.querySelector('#container');
+
+
 const black = document.querySelector('#black');
 const red = document.querySelector('#red');
 const blue = document.querySelector('#blue');
@@ -33,7 +35,43 @@ clear.addEventListener('click', () => {
 // The issue with a random color generator function is that each div is know as 'div#column', 
 // so giving a event to one of the divs is the same as giving on to all of them. Maybe each div could be assigned a random class.
 
+const gridOne = document.querySelector('#gridOne')
+const gridTwo = document.querySelector('#gridTwo')
+const gridThree = document.querySelector('#gridThree')
 
+gridOne.addEventListener('click', () => {
+    eightBy()
+})
+
+gridTwo.addEventListener('click', () => {
+    sixtyBy()
+})
+
+gridThree.addEventListener('click', () => {
+    hundredBy()
+})
+
+let clearGrid = function() {
+    container.innerHTML = ""
+}
+
+let eightBy = function() {
+    clearGrid()
+    fullGrid(8)
+    turnBlack()
+}
+
+let sixtyBy = function() {
+    clearGrid()
+    fullGrid(64)
+    turnBlack()
+}
+
+let hundredBy = function() {
+    clearGrid()
+    fullGrid(128)
+    turnBlack()
+}
 
 let turnBlack = function() {
     const column = document.querySelectorAll('#column');
